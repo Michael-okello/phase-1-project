@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <div class="header">
+            <h1>Social Media Manager</h1>
+            <p>Track your social media Content ideas</p>
+        </div>
+
+        <!--Form Section-->
+        <div class="form-section">
+            <h2>Add new idea</h2>
+            <div class="form-group">
+                <label for="platform">Social Media Platform:</label>
+                <select id="platform">
+                    <option value="">Choose platform</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="TikTok">Tiktok</option>
+                    <option value="YouTube">Youtube</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contentType">Content Type</label>
+                <select id="contentType">
+                    <option value="">Choose Content Type</option>
+                    <option value="Photo">Photo</option>
+                    <option value="Video">Video</option>
+                    <option value="Story">Story</option>
+                    <option value="Reel">Reel</option>
+                    <option value="Text Post">Text Post</option>
+                    <option value="Poll"></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ideaText">Your Idea:</label>
+                <textarea id="ideaText" placeholder="Write your social media post here..."></textarea>
+            </div>
+
+            <button class="btn" onclick="addIdea()">Save Idea</button>
+        </div>
+
+        <!--Ideas Section-->
+        <div class="ideas-section">
+            <h2>Your Ideas</h2>
+            <div id="ideasContainer">
+                <div class="empty-message">
+                    Add your first idea above
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
