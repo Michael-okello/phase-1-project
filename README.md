@@ -51,6 +51,6 @@ This project was built using HTML, CSS, and JavaScript and uses a publicly hoste
 ```javascript
 const baseURL = "https://json-server-deployment-2-ibe3.onrender.com/ideas";
 ```
-5. Open your browser and visit `"https://json-server-deployment-2-ibe3.onrender.com/ideas";`    
+5. Open the live server extension on VS code to view the project on chrome browser    
 
 
