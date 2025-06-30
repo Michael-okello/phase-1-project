@@ -55,13 +55,17 @@ The live site allows you to:
    ```bash
    cd phase-1-project
    ```
+3. Install the required dependencies:
 
-3. Open the project folder in your code editor.
+   ```bash
+   npm install
+   ```
 
-4. In the JavaScript file (`script.js` or equivalent), ensure the `baseU` is set to:
-```javascript
-const baseURL = "https://json-server-deployment-2-ibe3.onrender.com/ideas";
-```
-5. Open the live server extension on VS code to view the project on chrome browser    
+4. Run the development server:
 
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:5173`
 
