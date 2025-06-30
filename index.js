@@ -2,7 +2,7 @@
         let ideaCounter = 0; // To give each idea a unique ID
         
         // JSON Server URL 
-        const API_URL = 'http://localhost:3000/ideas';
+        const API_URL = "https://json-server-deployment-2-ibe3.onrender.com/ideas"
         
         
         window.addEventListener('load', function() {
@@ -22,7 +22,7 @@
                 const serverIdeas = await response.json();
                 ideas = serverIdeas;
                 
-                // I need to find the highest ID so new ideas don't conflict
+                // 
                 if (ideas.length > 0) {
                     ideaCounter = Math.max(...ideas.map(idea => idea.id)) + 1;
                 }
@@ -32,8 +32,8 @@
                 
             } catch (error) {
                 console.error('Error loading ideas:', error);
-                showError('Could not load ideas from server. Make sure JSON Server is running with: npx json-server --watch db.json --port 3000');
-                // If server fails, just show empty state
+                showError('Could not load ideas from server');
+                // 
                 displayIdeas();
             }
         }

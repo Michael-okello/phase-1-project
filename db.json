@@ -1,0 +1,40 @@
+{
+    "ideas": [
+    {
+        "id": 1,
+        "platform": "Instagram",
+        "contentType": "Post",
+        "text": "Behind the scenes of my morning routine",
+        "status": "posted",
+        "rating": 4,
+        "comments": "Got really good engagement!."
+    },
+    {
+        "id": 2,
+        "platform": "TikTok",
+        "contentType": "Reel",
+        "text": "Quick 30-second tutorial on organizing your workspace for maximum productivity",
+        "status": "not-posted",
+        "rating": 0,
+        "comments": ""
+    },
+    {
+        "id": 3,
+        "platform": "YouTube",
+        "contentType": "Video",
+        "text": "Complete beginner's guide to JavaScript",
+        "status": "posted",
+        "rating": 5,
+        "comments": "This performed amazingly!."
+    },
+    {
+        "id": 4,
+        "platform": "LinkedIn",
+        "contentType": "Article",
+        "text": "The hidden costs of remote work that nobody talks about",
+        "status": "not-posted",
+        "rating": 0,
+        "comments": ""
+    }
+    ]
+}
