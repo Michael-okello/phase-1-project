@@ -25,6 +25,17 @@ This project was built using HTML, CSS, and JavaScript and uses a publicly hoste
 - A computer, tablet, or phone
 - Access to the internet
 - A modern web browser
+  
+### View Live Site
+
+Visit the deployed application at: [content manager](https://michael-okello.github.io/phase-1-project/)
+
+The live site allows you to:
+- Mark ideas as posted or not posted
+- Rate posted ideas on a scale of 1 to 5 stars
+- Add comments on the performance of posted ideas
+- Persist all data to a public API
+- View some ideas on the site
 
 ###Local Development
 
@@ -47,7 +58,7 @@ This project was built using HTML, CSS, and JavaScript and uses a publicly hoste
 
 3. Open the project folder in your code editor.
 
-4. In the JavaScript file (`script.js` or equivalent), ensure the `baseUrl` is set to:
+4. In the JavaScript file (`script.js` or equivalent), ensure the `baseU` is set to:
 ```javascript
 const baseURL = "https://json-server-deployment-2-ibe3.onrender.com/ideas";
 ```
