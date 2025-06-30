@@ -2,7 +2,7 @@
         let ideaCounter = 0; // To give each idea a unique ID
         
         // JSON Server URL 
-        const API_URL = "https://json-server-deployment-2-ibe3.onrender.com/ideas"
+        const baseUrl = "https://json-server-deployment-2-ibe3.onrender.com/ideas"
         
         
         window.addEventListener('load', function() {
@@ -13,7 +13,7 @@
         async function loadIdeasFromServer() {
             try {
                 // fetch data from API
-                const response = await fetch(API_URL);
+                const response = await fetch(baseUrl);
                 
                 if (!response.ok) {
                     throw new Error('Could not connect to JSON Server. Make sure it\'s running on port 3000!');
@@ -41,7 +41,7 @@
         // Function to save idea to JSON Server
         async function saveIdeaToServer(idea) {
             try {
-                const response = await fetch(API_URL, {
+                const response = await fetch(baseUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -65,7 +65,7 @@
         // Function to update idea on server
         async function updateIdeaOnServer(idea) {
             try {
-                const response = await fetch(`${API_URL}/${idea.id}`, {
+                const response = await fetch(`${baseUrl}/${idea.id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
